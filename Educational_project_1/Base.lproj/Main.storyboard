@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,43 +13,43 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Educational_project_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="25" minValue="1" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="fcV-4Z-8RG">
-                                <rect key="frame" x="18" y="240" width="339" height="32"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="25" minValue="1" maxValue="50" minimumValueImage="01.circle" catalog="system" maximumValueImage="50.circle" translatesAutoresizingMaskIntoConstraints="NO" id="fcV-4Z-8RG">
+                                <rect key="frame" x="18" y="313.5" width="378" height="31"/>
                             </slider>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uQ-DK-gWP">
-                                <rect key="frame" x="90" y="301" width="195" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Загадать число">
-                                    <color key="titleColor" systemColor="systemPurpleColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkNumber" destination="BYZ-38-t0r" eventType="touchUpInside" id="cvb-4W-I4p"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bme-7d-TGR">
-                                <rect key="frame" x="105" y="440" width="165" height="32"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <color key="textColor" systemColor="systemPinkColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="b5E-PQ-VAn">
+                                <rect key="frame" x="129.5" y="393.5" width="155" height="109"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uQ-DK-gWP">
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="39"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Загадать число">
+                                            <color key="titleColor" systemColor="systemPurpleColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="checkNumber" destination="BYZ-38-t0r" eventType="touchUpInside" id="cvb-4W-I4p"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bme-7d-TGR">
+                                        <rect key="frame" x="52.5" y="59" width="50" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <color key="textColor" systemColor="systemPinkColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
-                            <constraint firstItem="7uQ-DK-gWP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="3Ni-T8-7VW"/>
-                            <constraint firstItem="fcV-4Z-8RG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="240" id="6h5-AY-38K"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fcV-4Z-8RG" secondAttribute="trailing" constant="20" id="7j0-f1-E6K"/>
-                            <constraint firstItem="7uQ-DK-gWP" firstAttribute="top" secondItem="fcV-4Z-8RG" secondAttribute="bottom" constant="30" id="Cc4-b0-ht3"/>
-                            <constraint firstItem="fcV-4Z-8RG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="GLj-sU-ASW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7uQ-DK-gWP" secondAttribute="trailing" constant="90" id="O1Y-CM-qIP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bme-7d-TGR" secondAttribute="trailing" constant="105" id="Qhj-7O-BwT"/>
-                            <constraint firstItem="bme-7d-TGR" firstAttribute="top" secondItem="7uQ-DK-gWP" secondAttribute="bottom" constant="100" id="Sgh-er-BYN"/>
-                            <constraint firstItem="bme-7d-TGR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="TsY-TG-H04"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bme-7d-TGR" secondAttribute="bottom" constant="195" id="dX8-bR-IvW"/>
+                            <constraint firstItem="b5E-PQ-VAn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8KO-yQ-RZ2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fcV-4Z-8RG" secondAttribute="trailing" constant="20" id="AKq-g3-ug1"/>
+                            <constraint firstItem="fcV-4Z-8RG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ujm-fa-j4i"/>
+                            <constraint firstItem="b5E-PQ-VAn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aYH-ge-euH"/>
+                            <constraint firstItem="b5E-PQ-VAn" firstAttribute="top" secondItem="fcV-4Z-8RG" secondAttribute="bottom" constant="50" id="uyY-Ld-2fb"/>
                         </constraints>
                     </view>
                     <connections>
@@ -63,6 +63,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="01.circle" catalog="system" width="128" height="121"/>
+        <image name="50.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
